@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px 100px;
+        grid-template-rows: 50px 1fr;
+        border-radius: 30px;
+      }
+      .one {
+        background-color: rgb(66, 242, 236);
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+      }
+
+      .two {
+        background-color: rgb(12, 88, 86);
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+      }
+
+      .three {
+        background-color: rgb(44, 236, 198);
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 1;
+      }
+
+      .four {
+        background-color: rgb(223, 27, 47);
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .five {
+        background-color: rgb(152, 9, 24);
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .six {
+        background-color: pink;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+      }
+
+      .seven {
+        background-color: red;
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="one">gmail</div>
+      <div class="two">search</div>
+      <div class="three">icons</div>
+      <div class="four">folders</div>
+      <div class="five">mail</div>
+      <div class="six">settings</div>
+      <div class="seven">apps</div>
+    </main>
+  </body>
+</html>

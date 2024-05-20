@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 50px 1fr 50px;
+        background-color: white;
+      }
+      .one {
+        background-color: white;
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+      }
+      .two {
+        background-color: moccasin;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+      }
+
+      .two h1 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .two h2 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .two h3 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 13;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .three {
+        background-color: greenyellow;
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+      }
+
+      .three h1 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .three h2 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 7;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .three h3 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 13;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .four {
+        background-color: silver;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+      }
+
+      .four h1 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .four h2 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .four h3 {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 9;
+        grid-row-end: 13;
+        margin: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="one"></div>
+      <div class="two">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+      </div>
+      <div class="three">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+      </div>
+      <div class="four">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+      </div>
+    </main>
+  </body>
+</html>
